@@ -122,7 +122,7 @@ header {
 }
 
 #categorias button:hover {
-    background: #55d66b;
+    background: #445bc2;
 
     color: #071009;
 }
@@ -171,7 +171,7 @@ main {
 .item:hover {
     transform: translateY(-3px);
 
-    border-color: #55d66b;
+    border-color: #445bc2;
 }
 
 .item h3 {
@@ -179,7 +179,7 @@ main {
 }
 
 .categoria {
-    color: #55d66b;
+    color: #445bc2;
 
     font-size: 13px;
 
@@ -263,7 +263,7 @@ main {
 
     padding: 13px;
 
-    background: #55d66b;
+    background: #445bc2;
 
     border: none;
 
