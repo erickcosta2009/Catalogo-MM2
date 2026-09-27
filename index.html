@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuki Store - MM2 Price Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        YUKI <span>STORE</span>
+    </div>
+
+    <button onclick="abrirPainel()" class="painel-btn">
+        Painel
+    </button>
+</header>
+
+<section class="hero">
+
+    <h1>MM2 PRICE CHECKER</h1>
+
+    <p>
+        Consulte o preço de compra dos itens de Murder Mystery 2.
+    </p>
+
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar arma ou faca..."
+        oninput="mostrarItens()"
+    >
+
+</section>
+
+<nav id="categorias">
+
+    <button onclick="selecionarCategoria('Todos')">
+        Todos
+    </button>
+
+    <button onclick="selecionarCategoria('Godly')">
+        Godlys
+    </button>
+
+    <button onclick="selecionarCategoria('Ancient')">
+        Ancients
+    </button>
+
+    <button onclick="selecionarCategoria('Chroma')">
+        Chromas
+    </button>
+
+    <button onclick="selecionarCategoria('Vintage')">
+        Vintages
+    </button>
+
+    <button onclick="selecionarCategoria('Event Godly')">
+        Event Godlys
+    </button>
+
+    <button onclick="selecionarCategoria('Set')">
+        Sets
+    </button>
+
+</nav>
+
+<main>
+
+    <div id="quantidade"></div>
+
+    <div id="listaItens"></div>
+
+</main>
+
+
+<!-- PAINEL -->
+
+<div id="painel" class="modal">
+
+    <div class="painel">
+
+        <h2>Painel de Preços</h2>
+
+        <input
+            type="text"
+            id="nomeItem"
+            placeholder="Nome do item"
+        >
+
+        <select id="categoriaItem">
+
+            <option value="Godly">
+                Godly
+            </option>
+
+            <option value="Ancient">
+                Ancient
+            </option>
+
+            <option value="Chroma">
+                Chroma
+            </option>
+
+            <option value="Vintage">
+                Vintage
+            </option>
+
+            <option value="Event Godly">
+                Event Godly
+            </option>
+
+            <option value="Set">
+                Set
+            </option>
+
+        </select>
+
+        <input
+            type="number"
+            id="precoItem"
+            placeholder="Preço de compra"
+            step="0.01"
+        >
+
+        <button onclick="salvarPreco()" class="salvar">
+            Salvar preço
+        </button>
+
+        <button onclick="fecharPainel()" class="fechar">
+            Fechar
+        </button>
+
+        <div id="listaPainel"></div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    Yuki Store • MM2 Price Checker
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
