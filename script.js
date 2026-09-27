@@ -8,13 +8,6 @@ let itens = [
 ========================= */
 
 {
-    nome: "Nik's Scythe",
-    categoria: "Ancient",
-    tipo: "Knife",
-    preco: ""
-},
-
-{
     nome: "Gingerscope",
     categoria: "Ancient",
     tipo: "Knife",
